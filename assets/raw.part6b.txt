@@ -1,0 +1,82 @@
+t:'humanities',stage:'Learn',name:'Yale PSYC 110 — Introduction to Psychology',zh:'科学心理学的通识入口。先建立领域地图，再进入行为、自我调节或社会心理分支。',en:'A general introduction to scientific psychology before moving into behaviour, self-regulation or social psychology.',url:'https://oyc.yale.edu/psychology/psyc-110'},
+ {cat:'humanities',stage:'Learn / Apply',name:'MIT — The Challenge of World Poverty',zh:'把经济学、实验、制度与现实政策问题放在同一课程中，适合世界模型训练。',en:'Integrates economics, experiments, institutions and real policy problems—useful for world-model building.',url:'https://ocw.mit.edu/courses/14-73-the-challenge-of-world-poverty-spring-2011/'},
+ {cat:'governance',stage:'Learn',name:'Yale ECON 252 — Financial Markets',zh:'金融制度、风险、行为金融与市场结构的系统入口。',en:'A structured introduction to financial institutions, risk, behavioural finance and market structure.',url:'https://oyc.yale.edu/economics/econ-252'},
+ {cat:'sustainability',stage:'Orient / Learn',name:'MIT Climate Primer',zh:'面向公众的气候科学、风险与解决方案入口，适合作为环境与可持续性横向维度的起点。',en:'A public-facing entry to climate science, risk and solutions; a suitable starting point for sustainability literacy.',url:'https://climate.mit.edu/primer'},
+ {cat:'health',stage:'Orient / Maintain',name:'WHO — Physical Activity & Sedentary Behaviour Guidelines',zh:'成年人运动与久坐的公共卫生基线；个体训练再按体能、伤病与目标细化。',en:'A public-health baseline for adult activity and sedentary behaviour; individualized training is specified by fitness, injury status and goals.',url:'https://www.who.int/publications/i/item/9789240015128'},
+ {cat:'health',stage:'Reference',name:'NCCIH — Traditional Chinese Medicine: What You Need To Know',zh:'传统医学内容的证据与安全参考，重点覆盖草药、补充疗法及与常规医疗的协作。',en:'Evidence and safety reference for traditional medicine, especially herbs, complementary treatments and coordination with conventional care.',url:'https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know'}
+];
+
+const catNames={
+ zh:{all:'全部',reasoning:'推理',systems:'系统',technology:'技术 / AI',design:'创造 / 设计',communication:'表达',humanities:'人文社会',governance:'人生治理',sustainability:'环境',health:'健康'},
+ en:{all:'All',reasoning:'Reasoning',systems:'Systems',technology:'Tech / AI',design:'Design',communication:'Communication',humanities:'Humanities',governance:'Life governance',sustainability:'Sustainability',health:'Health'}
+};
+const storage={
+ get(key,fallback){try{return localStorage.getItem(key)||fallback}catch(_){return fallback}},
+ set(key,value){try{localStorage.setItem(key,value)}catch(_){} }
+};
+let activeLang=storage.get('report-lang','zh');
+let activePalette=storage.get('report-palette','porcelain');
+let filters={zh:'all',en:'all'};
+
+function renderNav(){
+ const u=UI[activeLang];
+ const label=document.getElementById('index-label');
+ if(label) label.textContent=activeLang==='zh'?'目录':'INDEX';
+ const nav=document.getElementById('floating-nav');
+ nav.innerHTML=u.nav.map(x=>`<button type="button" data-go="${x[2]}"><span class="n">${x[0]}</span><span class="t">${x[1]}</span></button>`).join('');
+ nav.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ updateActiveIndex();
+}
+function updateActiveIndex(){
+ const page=document.querySelector(`.lang-page[data-lang="${activeLang}"]`);
+ if(!page) return;
+ const sections=[...page.querySelectorAll('[data-section]')].filter(el=>el.dataset.section!=='top');
+ let current=sections[0]?.dataset.section;
+ for(const el of sections){
+   if(el.getBoundingClientRect().top<=150) current=el.dataset.section;
+ }
+ document.querySelectorAll('#floating-nav [data-go]').forEach(b=>b.classList.toggle('active',b.dataset.go===current));
+}
+window.addEventListener('scroll',()=>requestAnimationFrame(updateActiveIndex),{passive:true});
+window.addEventListener('resize',()=>requestAnimationFrame(updateActiveIndex));
+
+function setPalette(name){
+ const allowed=['palm','porcelain','wire'];
+ activePalette=allowed.includes(name)?name:'porcelain';
+ storage.set('report-palette',activePalette);
+ document.documentElement.dataset.palette=activePalette;
+ document.querySelectorAll('[data-palette-btn]').forEach(b=>b.classList.toggle('active',b.dataset.paletteBtn===activePalette));
+}
+function setLang(lang){
+ activeLang=lang; storage.set('report-lang',lang); document.documentElement.lang=lang==='zh'?'zh-Hans':'en';
+ document.querySelectorAll('.lang-page').forEach(p=>p.hidden=p.dataset.lang!==lang);
+ document.querySelectorAll('[data-lang-btn]').forEach(b=>b.classList.toggle('active',b.dataset.langBtn===lang));
+ renderNav(); renderFilters(lang); renderResources(lang);
+}
+function go(section){
+ const page=document.querySelector(`.lang-page[data-lang="${activeLang}"]`);
+ const el=page.querySelector(`[data-section="${section}"]`); if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function renderFilters(lang){
+ const host=document.querySelector(`[data-filters="${lang}"]`); if(!host) return;
+ const cats=['all','reasoning','systems','technology','design','communication','humanities','governance','sustainability','health'];
+ host.innerHTML=cats.map(c=>`<button type="button" class="filter-btn ${filters[lang]===c?'active':''}" data-cat="${c}">${catNames[lang][c]}</button>`).join('');
+ host.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>{filters[lang]=b.dataset.cat;renderFilters(lang);renderResources(lang)}));
+}
+function renderResources(lang){
+ const page=document.querySelector(`.lang-page[data-lang="${lang}"]`); if(!page) return;
+ const q=(page.querySelector(`[data-search="${lang}"]`)?.value||'').trim().toLowerCase();
+ const cat=filters[lang];
+ const list=resources.filter(r=>(cat==='all'||r.cat===cat)&&(!q||(r.name+' '+r.zh+' '+r.en+' '+r.stage+' '+catNames[lang][r.cat]).toLowerCase().includes(q)));
+ const host=page.querySelector(`[data-resource-list="${lang}"]`);
+ host.innerHTML=list.map(r=>`<div class="resource"><h4><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></h4><div class="stage-label">${r.stage}</div><p>${lang==='zh'?r.zh:r.en}</p><div class="cat">${catNames[lang][r.cat]}</div></div>`).join('') || `<div class="resource"><h4>${lang==='zh'?'没有匹配结果':'No matches'}</h4></div>`;
+}
+
+document.querySelectorAll('[data-lang-btn]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.langBtn)));
+document.querySelectorAll('[data-palette-btn]').forEach(b=>b.addEventListener('click',()=>setPalette(b.dataset.paletteBtn)));
+document.querySelectorAll('[data-search]').forEach(i=>i.addEventListener('input',()=>renderResources(i.dataset.search)));
+setPalette(activePalette);
+setLang(activeLang);
+</script>
+</body>
+</html>
