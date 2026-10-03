@@ -1,0 +1,55 @@
+/* Personal Learning Map — typography and line-breaking layer */
+.lang-page{
+  text-rendering:optimizeLegibility;
+  font-kerning:normal;
+}
+
+/* CJK line breaking: keep punctuation and short tails visually coherent. */
+.lang-page[data-lang="zh"]{
+  line-break:strict;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+.lang-page[data-lang="zh"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3){
+  line-break:strict;
+  word-break:normal;
+  text-wrap:balance;
+}
+.lang-page[data-lang="zh"] :where(.dek,.lead){
+  line-break:strict;
+  word-break:normal;
+  text-wrap:balance;
+}
+.lang-page[data-lang="zh"] :where(.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
+  line-break:strict;
+  word-break:normal;
+  text-wrap:pretty;
+}
+
+/* English prose: keep final lines from becoming isolated single words. */
+.lang-page[data-lang="en"]{
+  line-break:auto;
+  word-break:normal;
+  overflow-wrap:normal;
+  hyphens:auto;
+}
+.lang-page[data-lang="en"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3,.dek,.lead){
+  text-wrap:balance;
+}
+.lang-page[data-lang="en"] :where(.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
+  text-wrap:pretty;
+}
+
+/* Shared editorial safeguards. */
+:where(.dek,.lead,.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,td){
+  hanging-punctuation:first allow-end last;
+  widows:2;
+  orphans:2;
+}
+:where(th,td){
+  white-space:normal;
+}
+
+@media(max-width:640px){
+  .lang-page :where(.dek,.lead){text-wrap:pretty}
+}
