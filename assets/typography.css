@@ -4,7 +4,7 @@
   font-kerning:normal;
 }
 
-/* CJK line breaking: keep punctuation and short tails visually coherent. */
+/* CJK line breaking: keep punctuation and lexical units visually coherent. */
 .lang-page[data-lang="zh"]{
   line-break:strict;
   word-break:normal;
@@ -25,6 +25,7 @@
   word-break:normal;
   text-wrap:pretty;
 }
+.cjk-word{white-space:nowrap}
 
 /* English prose: keep final lines from becoming isolated single words. */
 .lang-page[data-lang="en"]{
@@ -46,9 +47,7 @@
   widows:2;
   orphans:2;
 }
-:where(th,td){
-  white-space:normal;
-}
+:where(th,td){white-space:normal}
 
 @media(max-width:640px){
   .lang-page :where(.dek,.lead){text-wrap:pretty}
