@@ -1,0 +1,89 @@
+<b>学习路径：</b>数字/数据素养 → 编程/计算基础 → AI 基础 → eval → workflow / system design。<br><b>表现证据：</b>能评估模型与系统，并区分长期能力、可迁移方法与阶段性工具。</div></div>
+    <div class="cap-row"><div class="cap-no">08</div><div><h3>人文、伦理、公民与文明理解</h3><div class="def">历史、经济、社会、制度、伦理、审美、科技与社会、环境与可持续性。</div></div><div class="path"><b>学习路径：</b>高质量通识入口 → 原典/经典 → 多模型比较 → 当代数据与公共问题。Stanford、Harvard、MIT 均保留显著的人文/社会/伦理训练。<span class="cite">[4–6]</span><br><b>表现证据：</b>能区分事实、解释模型、价值判断与制度约束。</div></div>
+    <div class="cap-row"><div class="cap-no">09</div><div><h3>专业深度与价值创造</h3><div class="def">在一个领域建立足够深度，处理高难度问题并产生可验证价值。</div></div><div class="path"><b>学习路径：</b>专业基础 → 真实项目 → 专家反馈 → 复杂系统 → 旗舰作品/专业贡献。<br><b>表现证据：</b>能解决本领域真实问题；作品、团队或市场可以独立验证质量。AI × GeoAI 可作为候选交叉方向，但需要持续用项目需求和比较优势验证。</div></div>
+    <div class="cap-row"><div class="cap-no">10</div><div><h3>人生治理与长期责任</h3><div class="def">财富、风险、法律、关系、家庭、照护、共同体与价值排序。</div></div><div class="path"><b>学习路径：</b>先建立基本制度与安全网，再由生命周期事件触发专项学习。<br><b>表现证据：</b>现金流与风险制度、保险与应急方案、关系规则、照护准备和重大决策记录。</div></div>
+  </div>
+</section>
+
+<section data-section="resources">
+  <div class="sec-head"><div class="sec-no">05</div><h2>开放学习入口</h2></div>
+  <p class="lead">入口资源承担定向与基础建构功能。进入 Practice 后，训练逐步转向问题、练习、项目、真实对象与外部反馈。</p>
+  <div class="resource-tools">
+    <input class="search" data-search="zh" placeholder="搜索：概率、AI、设计、系统、健康、环境……" />
+    <div class="filters" data-filters="zh"></div>
+  </div>
+  <div class="resource-list" data-resource-list="zh"></div>
+</section>
+
+<section data-section="methods">
+  <div class="sec-head"><div class="sec-no">06</div><h2>能力形成：研究支持的学习机制</h2></div>
+  <p class="lead">学习方法按目标类型配置。记忆保持主要受检索练习与间隔安排支持；跨情境迁移更多依赖理解、多个实例比较、强模型、变化练习与新情境调用。National Academies 与相关综述为这些机制提供研究依据。<span class="cite">[9][10]</span></p>
+  <div class="method-grid">
+    <div class="method"><div class="n">1</div><div><h3>先定义表现标准</h3><p>学习前先识别专家作品、评价标准和典型任务。能力目标以可观察表现作为完成标准。</p></div></div>
+    <div class="method"><div class="n">2</div><div><h3>检索练习</h3><p>在不查看材料时回忆、回答问题或重建结构，再立即纠错。研究支持它优于单纯重复阅读用于长期保持。<span class="cite">[9][10]</span></p></div></div>
+    <div class="method"><div class="n">3</div><div><h3>间隔安排</h3><p>把重要知识分布到多次学习。具体间隔根据保留期限和任务性质设置。<span class="cite">[9][10]</span></p></div></div>
+    <div class="method"><div class="n">4</div><div><h3>变化练习与比较</h3><p>在多个实例、问题类型和情境中练习；通过比较相似与不同案例，形成更可迁移的概念边界。<span class="cite">[9]</span></p></div></div>
+    <div class="method"><div class="n">5</div><div><h3>自我解释与模型</h3><p>解释成立机制、适用条件以及与旧知识的连接。结构理解为跨情境迁移提供基础。<span class="cite">[9]</span></p></div></div>
+    <div class="method"><div class="n">6</div><div><h3>目标练习与反馈</h3><p>每次练习针对可观察弱点，并尽快获取教师、同伴、用户、测试或行为数据反馈。深度知识的发展需要持续练习与反馈。<span class="cite">[11]</span></p></div></div>
+    <div class="method"><div class="n">7</div><div><h3>真实应用与外部对象</h3><p>让核心学习主线接触真实数据、真实用户、真实团队与真实决策，以检验能力在新情境中的稳定表现。</p></div></div>
+    <div class="method"><div class="n">8</div><div><h3>学习网络</h3><p>为高价值专业建立稳定的同伴、导师或评审关系。课程提供输入，专业反馈决定下一轮练习方向。</p></div></div>
+  </div>
+  <div class="note"><b>季度实施。</b>每季度推进少数高优先级能力进入下一深度；健康、语言等基础能力保持低剂量维护；探索性主题可停留在 Orient 或 Learn。季度评价以能力证据、现实应用与反馈质量为主。</div>
+</section>
+
+<section data-section="sources">
+  <div class="sec-head"><div class="sec-no">07</div><h2>主要来源</h2></div>
+  <p class="lead">优先使用机构官方页面、大学官方培养要求与综合性学习研究。网页内容会更新；涉及课程和工具的部分应定期复核。</p>
+  <div class="source-list">
+    <div class="source"><div class="sid">[1]</div><div><h3><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/" target="_blank" rel="noopener noreferrer">World Economic Forum — Future of Jobs Report 2025: Skills Outlook</a></h3><span class="date">2025</span></div><p>雇主调查。当前核心技能包括 analytical thinking、resilience、leadership、creative thinking、technology literacy 等；2025–2030 上升最快的技能还包括 AI & big data、cybersecurity、lifelong learning 与 environmental stewardship。</p></div>
+    <div class="source"><div class="sid">[2]</div><div><h3><a href="https://www.oecd.org/en/data/tools/oecd-learning-compass-2030.html" target="_blank" rel="noopener noreferrer">OECD — Learning Compass 2030</a></h3><span class="date">Framework</span></div><p>强调 student agency、well-being、知识/技能/态度/价值，以及 creating new value、reconciling tensions and dilemmas、taking responsibility；面向个人、集体和环境福祉。</p></div>
+    <div class="source"><div class="sid">[3]</div><div><h3><a href="https://www.unesco.org/en/articles/ai-competency-framework-students?hub=84624" target="_blank" rel="noopener noreferrer">UNESCO — AI Competency Framework for Students</a></h3><span class="date">2024 · updated 2026</span></div><p>12 个 AI 能力块，分为 human-centred mindset、ethics of AI、AI techniques & applications、AI system design 四维，并以 Understand–Apply–Create 三层推进。</p></div>
+    <div class="source"><div class="sid">[4]</div><div><h3><a href="https://ways.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford — Ways of Thinking / Ways of Doing</a></h3><span class="date">Current 2026</span></div><p>八类通识广度：Aesthetic & Interpretive Inquiry、Applied Quantitative Reasoning、Creative Expression、Exploring Difference & Power、Ethical Reasoning、Formal Reasoning、Scientific Method & Analysis、Social Inquiry。</p></div>
+    <div class="source"><div class="sid">[5]</div><div><h3><a href="https://college.harvard.edu/academics/liberal-arts-sciences" target="_blank" rel="noopener noreferrer">Harvard College — Liberal Arts & Sciences</a></h3><span class="date">Current</span></div><p>四类 General Education、三大学术领域分布，以及 Quantitative Reasoning with Data；培养结构同时保留 concentration 的专业深度。</p></div>
+    <div class="source"><div class="sid">[6]</div><div><h3><a href="https://catalog.mit.edu/mit/undergraduate-education/general-institute-requirements/" target="_blank" rel="noopener noreferrer">MIT — General Institute Requirements</a></h3><span class="date">Current</span></div><p>数学、科学、实验、HASS、跨通识与专业阶段的 Communication Requirement，以及 Physical Education & Wellness。</p></div>
+    <div class="source"><div class="sid">[7]</div><div><h3><a href="https://www.minerva.edu/four-year-curriculum/" target="_blank" rel="noopener noreferrer">Minerva — Four Year Curriculum</a></h3><span class="date">Current</span></div><p>第一年 Cornerstone 以 critical thinking、creative thinking、effective communication、effective interaction 为核心，并在后续学科与现实情境中反复应用。</p></div>
+    <div class="source"><div class="sid">[8]</div><div><h3><a href="https://dschool.stanford.edu/tools/design-abilities-workshop" target="_blank" rel="noopener noreferrer">Stanford d.school — Design Abilities</a></h3><span class="date">Current</span></div><p>八种设计能力，包括 navigate ambiguity、learn from others、synthesize information、experiment rapidly、move between concrete and abstract、build intentionally、communicate deliberately、design your design work。</p></div>
+    <div class="source"><div class="sid">[9]</div><div><h3><a href="https://www.nationalacademies.org/read/24783/chapter/7" target="_blank" rel="noopener noreferrer">National Academies — How People Learn II</a></h3><span class="date">2018</span></div><p>综合学习研究：retrieval practice、spaced practice、interleaved/varied practice、自我解释等；同时区分记忆保持与迁移所需的不同学习安排。</p></div>
+    <div class="source"><div class="sid">[10]</div><div><h3><a href="https://journals.sagepub.com/stoken/rbtfl/Z10jaVH/60XQM/full" target="_blank" rel="noopener noreferrer">Dunlosky et al. — Improving Students’ Learning With Effective Learning Techniques</a></h3><span class="date">2013</span></div><p>综述十种常见学习技术；practice testing 与 distributed practice 被评为 high utility，interleaving、自我解释等证据更依赖任务和情境。</p></div>
+    <div class="source"><div class="sid">[11]</div><div><h3><a href="https://www.nationalacademies.org/read/13398/chapter/6" target="_blank" rel="noopener noreferrer">National Research Council — Education for Life and Work</a></h3><span class="date">2012</span></div><p>深度领域知识与可迁移能力的发展需要持续努力，并需要针对领域知识的练习与反馈。</p></div>
+    <div class="source"><div class="sid">[12]</div><div><h3><a href="https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know" target="_blank" rel="noopener noreferrer">NCCIH — Traditional Chinese Medicine: What You Need To Know</a></h3><span class="date">Health reference</span></div><p>传统医学内容的证据与安全参考，覆盖部分方法的适用证据，以及草药的质量、污染、相互作用与医疗协作事项。</p></div>
+    <div class="source"><div class="sid">[13]</div><div><h3><a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer">WHO — Guidelines on Physical Activity and Sedentary Behaviour</a></h3><span class="date">2020</span></div><p>成年人身体活动与久坐行为的公共卫生基线，用于设定运动模块的基础健康目标；个体训练再按体能、伤病与目标细化。</p></div>
+  </div>
+</section>
+
+<div class="footer"><span>Future Capabilities & Lifelong Learning Architecture · v5</span><span>Visual system: lieflat-charts R01 · Palm / Porcelain / Wire presets.</span></div>
+</div>
+
+<div class="lang-page" data-lang="en" hidden>
+<header class="hero" data-section="top">
+  <div class="kicker">Capability benchmark · curriculum architecture</div>
+  <h1>Future Capabilities & <b>Lifelong Learning Architecture</b></h1>
+  <p class="dek">An evidence-aligned mapping of a 14-module lifelong-learning system against global labour-market research, future-education frameworks, leading university curricula, and learning science—followed by open-entry learning pathways.</p>
+  <div class="meta-line"><span>Scope: personal lifelong learning</span><span>Evidence: official frameworks / curricula / research</span><span>Version: 2026-10-03</span></div>
+</header>
+
+<section data-section="scope">
+  <div class="sec-head"><div class="sec-no">01</div><h2>Scope and method</h2></div>
+  <p class="lead">The evidence is organized by function: WEF reports employer skill demand; OECD and UNESCO provide education goals and competency frameworks; universities specify undergraduate curriculum structures; learning science explains how knowledge and skills are formed, retained and transferred.</p>
+  <div class="claim-grid">
+    <div class="claim"><div class="num">4</div><h3>Evidence types</h3><p>Labour market, future education, university curricula, and learning science. The four evidence types inform demand, goals, curriculum structure and learning mechanisms respectively.</p></div>
+    <div class="claim"><div class="num">10</div><h3>Capability domains</h3><p>These define long-run outcomes and are developed through different courses, projects and life practices over time.</p></div>
+    <div class="claim"><div class="num">14</div><h3>Existing modules</h3><p>These remain the content and life-domain index. Modules organize material; capability domains define performance.</p></div>
+  </div>
+  <div class="note"><b>Source roles.</b> WEF’s <i>Future of Jobs 2025</i> provides employer views on current and rising skills. The OECD Learning Compass provides an education framework centred on student agency, well-being, knowledge/skills/attitudes/values and transformative competencies. UNESCO’s four-dimension framework organizes AI competency education.<span class="cite">[1–3]</span></div>
+  <div class="subhead">Cross-framework synthesis</div>
+  <p class="lead">The recurrent structure across sources includes health and self-regulation foundations; learning agency; quantitative, evidential and scientific reasoning; creativity and design; communication and collaboration; digital and AI literacy; ethics, citizenship and social understanding; sustainability; and genuine depth in at least one professional domain. Personal finance, family, law and care sit in the life-governance layer and extend areas that university and workforce frameworks cover less directly.</p>
+</section>
+
+<section data-section="benchmark">
+  <div class="sec-head"><div class="sec-no">02</div><h2>Institutional framework map</h2></div>
+  <p class="lead">The matrix records relationships that are identifiable in the cited public frameworks. Symbols indicate how explicitly each theme appears in the cited source and support structural comparison.</p>
+  <div class="legend"><span class="mark">●</span> explicit requirement or core framework element　<span class="mark">◐</span> clearly related　<span>—</span> limited coverage in the cited source</div>
+  <div class="table-wrap">
+    <table class="benchmark-table">
+      <colgroup><col class="c0"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="c9"></colgroup>
+      <thead><tr><th>Capability domain</th><th>WEF</th><th>OECD</th><th>UNESCO AI</th><th>Stanford</th><th>Harvard</th><th>MIT</th><th>Minerva</th><th>d.school</th><th>Role in this system</th></tr></thead>
+      <tbody>
+        <tr><td>1. Physical & psychological capacity</td><td>● resilience; self-awareness</td><td>● well-being; health foundations</td><td>◐ human-centred</td><td>—</td><td>—</td><td>● PE&W</td><td>◐ adaptation</td><td>◐ ambiguity</td><td>Foundation</td></tr>
+        <tr><td>2. Learning agency & metacognition</td><td>● curiosity & lifelong learning</td><td>● student agency</td><td>◐ lifelong AI learning</td><td>◐ breadth toolkit</td><td>◐ breadth + concentration</td><td>◐ departmental depth</td><td>● transferable concepts / habits</td><td>● design your design work</td><td>Control layer</td></tr>
+        <tr><td>3. Quantitative, ev
