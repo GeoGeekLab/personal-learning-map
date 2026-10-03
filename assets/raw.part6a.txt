@@ -9,6 +9,10 @@ class="date">Health reference</span></div><p>Evidence and safety reference for t
 </main>
 </div>
 
+<a class="home-exit" href="https://geogeeklab.github.io/index.html" aria-label="GeoGeek home">
+  <span class="brand-mark" aria-hidden="true"></span><span class="brand-word">GeoGeek</span>
+</a>
+
 <aside class="floating-index" aria-label="Index">
   <div class="index-label" id="index-label">INDEX</div>
   <nav class="nav" id="floating-nav"></nav>
@@ -18,7 +22,6 @@ class="date">Health reference</span></div><p>Evidence and safety reference for t
   <div class="lang-switch" aria-label="Language">
     <button data-lang-btn="zh" class="active">中文</button><button data-lang-btn="en">EN</button>
   </div>
-  <div class="controls-divider" aria-hidden="true"></div>
   <div class="palette-switch" aria-label="Color system">
     <button type="button" data-palette-btn="palm" data-label="Palm · 椰林绿" title="Palm · 椰林绿"><span class="swatch"></span></button>
     <button type="button" data-palette-btn="porcelain" data-label="Porcelain · 青瓷蓝" title="Porcelain · 青瓷蓝"><span class="swatch"></span></button>
