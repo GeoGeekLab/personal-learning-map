@@ -16,17 +16,22 @@ html,body{margin:0;min-height:100%;background:#F7F2EB;color:#081F5C;font-family:
 (async()=>{
   const status=document.getElementById('status');
   try{
-    const files=['assets/site.part1.txt','assets/site.part2.txt','assets/site.part3.txt','assets/site.part4.txt'];
-    const parts=await Promise.all(files.map(async path=>{const r=await fetch(path,{cache:'no-cache'});if(!r.ok)throw new Error(path+' '+r.status);return r.text()}));
-    const b64=parts.join('').replace(/\s+/g,'');
-    const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
-    if(!('DecompressionStream' in window))throw new Error('This browser does not support DecompressionStream.');
-    const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-    const html=await new Response(stream).text();
-    document.open();document.write(html);document.close();
+    const files=[
+      'assets/raw.part1.txt','assets/raw.part2.txt','assets/raw.part3.txt','assets/raw.part4.txt',
+      'assets/raw.part5a.txt','assets/raw.part5b.txt','assets/raw.part6a.txt','assets/raw.part6b.txt'
+    ];
+    const parts=await Promise.all(files.map(async path=>{
+      const r=await fetch(path,{cache:'no-cache'});
+      if(!r.ok) throw new Error(path+' '+r.status);
+      return r.text();
+    }));
+    const html=parts.join('');
+    document.open();
+    document.write(html);
+    document.close();
   }catch(err){
     console.error(err);
-    status.textContent='The map could not be loaded. Open the repository and refresh, or use a current browser.';
+    status.textContent='The map could not be loaded. Refresh this page or open the repository.';
   }
 })();
 </script>
