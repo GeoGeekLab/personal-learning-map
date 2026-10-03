@@ -1,0 +1,88 @@
+/* Personal Learning Map — interaction layer */
+:root{
+  --mx:50vw;
+  --my:30vh;
+  --hero-x:0px;
+  --hero-y:0px;
+  --motion-fast:160ms;
+  --motion-mid:260ms;
+  --ease-out:cubic-bezier(.2,.8,.2,1);
+}
+.mouse-light{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(420px circle at var(--mx) var(--my),color-mix(in srgb,var(--accent) 7%,transparent),transparent 68%);
+  opacity:.72;transition:opacity var(--motion-mid) ease;
+}
+.shell{position:relative;z-index:1}
+.hero h1{transform:translate3d(var(--hero-x),var(--hero-y),0);transition:transform 480ms var(--ease-out)}
+.hero .dek{transform:translate3d(calc(var(--hero-x) * -.32),calc(var(--hero-y) * -.32),0);transition:transform 560ms var(--ease-out)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+
+.home-exit{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 0%,transparent)}
+.home-exit:hover{box-shadow:0 10px 28px color-mix(in srgb,var(--txt) 8%,transparent)}
+.home-exit .brand-mark{transition:transform var(--motion-mid) var(--ease-out),border-color var(--motion-fast) ease}
+.home-exit:hover .brand-mark{transform:rotate(90deg);border-color:var(--accent)}
+.home-exit .brand-word{transition:color var(--motion-fast) ease}
+.home-exit:hover .brand-word{color:var(--accent)}
+
+.floating-controls{transition:box-shadow var(--motion-mid) var(--ease-out),border-color var(--motion-fast) ease,transform var(--motion-mid) var(--ease-out)}
+.floating-controls:hover{border-color:color-mix(in srgb,var(--accent) 38%,var(--grid));box-shadow:0 14px 38px color-mix(in srgb,var(--txt) 11%,transparent);transform:translateY(-1px)}
+.lang-switch button{transition:background var(--motion-fast) ease,color var(--motion-fast) ease,transform var(--motion-fast) var(--ease-out)}
+.lang-switch button:not(.active):hover{color:var(--txt);background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.lang-switch button:active{transform:scale(.96)}
+.palette-switch button{transition:border-color var(--motion-fast) ease,transform var(--motion-fast) var(--ease-out),background var(--motion-fast) ease}
+.palette-switch button:hover{transform:translateY(-2px);background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.palette-switch button:active{transform:translateY(0) scale(.92)}
+.palette-switch .swatch{transition:transform var(--motion-mid) var(--ease-out),box-shadow var(--motion-mid) ease}
+.palette-switch button:hover .swatch{transform:scale(1.25)}
+.palette-switch button.active .swatch{box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 12%,transparent)}
+
+.nav button{position:relative}
+.nav button::before{content:"";position:absolute;left:-11px;top:50%;width:3px;height:3px;border-radius:50%;background:var(--faint);transform:translateY(-50%) scale(.8);transition:transform var(--motion-fast) var(--ease-out),background var(--motion-fast) ease,box-shadow var(--motion-fast) ease}
+.nav button:hover::before,.nav button.active::before{background:var(--accent);transform:translateY(-50%) scale(1.4);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 10%,transparent)}
+.nav button.active{transform:translateX(4px)}
+
+.claim,.cap-row,.stage,.method,.source,.resource{position:relative;transition:background var(--motion-fast) ease,transform var(--motion-mid) var(--ease-out),border-color var(--motion-fast) ease}
+.claim:hover,.stage:hover,.method:hover{background:color-mix(in srgb,var(--accent) 4.5%,transparent)}
+.claim:hover{transform:translateY(-2px)}
+.claim .num,.stage .n,.method .n{transition:transform var(--motion-mid) var(--ease-out),color var(--motion-fast) ease}
+.claim:hover .num,.stage:hover .n,.method:hover .n{transform:translateY(-2px)}
+.cap-row:hover,.resource:hover,.source:hover{background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 5%,transparent),transparent 72%)}
+.cap-row:hover{transform:translateX(5px)}
+.cap-row .cap-no{transition:color var(--motion-fast) ease,transform var(--motion-mid) var(--ease-out)}
+.cap-row:hover .cap-no{color:var(--hero);transform:translateX(2px)}
+.resource:hover,.source:hover{transform:translateX(4px)}
+.resource h4 a,.source h3 a{display:inline;position:relative;text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));background-position:0 100%;background-size:0 1px;background-repeat:no-repeat;transition:background-size var(--motion-mid) var(--ease-out),color var(--motion-fast) ease}
+.resource:hover h4 a,.source:hover h3 a,.resource h4 a:hover,.source h3 a:hover{background-size:100% 1px;color:var(--accent)}
+.resource h4 a::after,.source h3 a::after{content:" ↗";font-family:var(--sans);font-size:.72em;opacity:0;display:inline-block;transform:translate(-2px,2px);transition:opacity var(--motion-fast) ease,transform var(--motion-mid) var(--ease-out)}
+.resource:hover h4 a::after,.source:hover h3 a::after{opacity:.75;transform:translate(1px,-1px)}
+
+.table-wrap{cursor:grab;scrollbar-color:var(--faint) transparent;scrollbar-width:thin;overscroll-behavior-x:contain}
+.table-wrap.is-dragging{cursor:grabbing;user-select:none}
+.table-wrap table{cursor:default}
+tbody tr{transition:background var(--motion-fast) ease}
+tbody tr:hover{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+tbody tr:hover td:first-child{color:var(--accent)}
+td{transition:color var(--motion-fast) ease,background var(--motion-fast) ease}
+th{transition:color var(--motion-fast) ease}
+th:hover{color:var(--accent)}
+
+.search{transition:border-color var(--motion-fast) ease,box-shadow var(--motion-fast) ease}
+.search:hover,.search:focus{border-color:var(--accent);box-shadow:0 1px 0 var(--accent)}
+.filter-btn{transition:color var(--motion-fast) ease,border-color var(--motion-fast) ease,background var(--motion-fast) ease,transform var(--motion-fast) var(--ease-out)}
+.filter-btn:hover{background:color-mix(in srgb,var(--accent) 5%,transparent);transform:translateY(-1px)}
+.filter-btn:active{transform:translateY(0) scale(.97)}
+.sec-head h2{transition:transform var(--motion-mid) var(--ease-out)}
+section:hover>.sec-head h2{transform:translateX(3px)}
+
+@media (hover:none),(pointer:coarse){
+  .mouse-light{display:none}
+  .hero h1,.hero .dek{transform:none!important}
+  .claim:hover,.cap-row:hover,.stage:hover,.method:hover,.source:hover,.resource:hover,.floating-controls:hover,.home-exit:hover{transform:none}
+  .table-wrap{cursor:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .mouse-light{display:none}
+  .hero h1,.hero .dek{transform:none!important}
+}
