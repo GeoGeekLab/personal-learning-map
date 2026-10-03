@@ -1,0 +1,48 @@
+class="date">Health reference</span></div><p>Evidence and safety reference for traditional medicine, covering the evidence base for selected practices and practical issues involving herb quality, contamination, interactions and coordination with conventional care.</p></div>
+    <div class="source"><div class="sid">[13]</div><div><h3><a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer">WHO — Guidelines on Physical Activity and Sedentary Behaviour</a></h3><span class="date">2020</span></div><p>Public-health baseline for adult physical activity and sedentary behaviour. Individual training is then specified by fitness, injury status and goals.</p></div>
+  </div>
+</section>
+
+<div class="footer"><span>Future Capabilities & Lifelong Learning Architecture · v5</span><span>Visual system: lieflat-charts R01 · Palm / Porcelain / Wire presets.</span></div>
+</div>
+
+</main>
+</div>
+
+<aside class="floating-index" aria-label="Index">
+  <div class="index-label" id="index-label">INDEX</div>
+  <nav class="nav" id="floating-nav"></nav>
+</aside>
+
+<div class="floating-controls" aria-label="Page controls">
+  <div class="lang-switch" aria-label="Language">
+    <button data-lang-btn="zh" class="active">中文</button><button data-lang-btn="en">EN</button>
+  </div>
+  <div class="controls-divider" aria-hidden="true"></div>
+  <div class="palette-switch" aria-label="Color system">
+    <button type="button" data-palette-btn="palm" data-label="Palm · 椰林绿" title="Palm · 椰林绿"><span class="swatch"></span></button>
+    <button type="button" data-palette-btn="porcelain" data-label="Porcelain · 青瓷蓝" title="Porcelain · 青瓷蓝"><span class="swatch"></span></button>
+    <button type="button" data-palette-btn="wire" data-label="Wire · 编辑部红" title="Wire · 编辑部红"><span class="swatch"></span></button>
+  </div>
+</div>
+
+<script>
+const UI={
+ zh:{title:'未来能力与终身学习架构',note:'机构基准、14 模块审计、开放学习入口与学习科学。各框架按原始用途呈现。',navLabel:'目录',meta:'外部基准：WEF · OECD · UNESCO · Stanford · Harvard · MIT · Minerva · Stanford d.school · National Academies',nav:[['01','范围与方法','scope'],['02','机构框架','benchmark'],['03','14 模块审计','audit'],['04','能力与深度','capabilities'],['05','开放学习入口','resources'],['06','学习机制','methods'],['07','来源','sources']]},
+ en:{title:'Future Capabilities & Lifelong Learning',note:'Institutional benchmarks, a 14-module audit, open-entry learning resources and learning science. Each framework is presented in its original role.',navLabel:'CONTENTS',meta:'External benchmarks: WEF · OECD · UNESCO · Stanford · Harvard · MIT · Minerva · Stanford d.school · National Academies',nav:[['01','Scope & method','scope'],['02','Framework map','benchmark'],['03','14-module audit','audit'],['04','Capabilities & depth','capabilities'],['05','Open resources','resources'],['06','Learning mechanisms','methods'],['07','Sources','sources']]}
+};
+
+const resources=[
+ {cat:'reasoning',stage:'Orient / Learn',name:'National Academies — How People Learn II',zh:'学习科学总览。用于建立检索、间隔、变化练习、自我解释和迁移的基本认识。',en:'A broad learning-science synthesis covering retrieval, spacing, variation, explanation and transfer.',url:'https://www.nationalacademies.org/read/24783/chapter/7'},
+ {cat:'reasoning',stage:'Learn / Practice',name:'Harvard Stat 110 — Probability',zh:'系统概率课程。适合作为不确定性推理与后续统计学习的主干入口。',en:'A rigorous probability course and a strong spine for uncertainty reasoning before deeper statistics.',url:'https://stat110.hsites.harvard.edu/'},
+ {cat:'reasoning',stage:'Learn / Practice',name:'MIT 18.06SC — Linear Algebra',zh:'为独立学习设计，含视频、习题、解答和考试。建议在技术或数据需求出现后进入。',en:'Designed for independent study with lectures, problems, solutions and exams; best entered when technical or data needs justify it.',url:'https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/'},
+ {cat:'systems',stage:'Orient',name:'MIT — Systems Thinking and Modeling for a Complex World',zh:'短入口。先学习反馈、系统结构和复杂行为，再决定是否深入系统动力学。',en:'A short entry to feedback, system structure and complex behaviour before committing to deeper system dynamics.',url:'https://ocw.mit.edu/courses/res-15-004-system-dynamics-systems-thinking-and-modeling-for-a-complex-world-january-iap-2020/'},
+ {cat:'technology',stage:'Learn / Practice',name:'Harvard CS50P — Introduction to Programming with Python',zh:'编程入门路径，强调问题、调试与练习。适合无系统编程训练者。',en:'An accessible programming entry with substantial problem-solving, debugging and practice.',url:'https://cs50.harvard.edu/python/'},
+ {cat:'technology',stage:'Learn / Practice',name:'Harvard CS50x — Introduction to Computer Science',zh:'覆盖算法、数据结构、内存、SQL、Web 与最终项目，适合建立计算机科学主干。',en:'A broad computer-science foundation covering algorithms, data structures, memory, SQL, web development and a final project.',url:'https://cs50.harvard.edu/x/'},
+ {cat:'technology',stage:'Orient',name:'UNESCO — AI Competency Framework for Students',zh:'以人本、伦理、技术与应用、系统设计四个维度组织 AI 学习，并采用 Understand / Apply / Create 三个发展层级。',en:'Organizes AI learning around human-centred mindset, ethics, techniques/applications and system design across Understand / Apply / Create.',url:'https://www.unesco.org/en/articles/ai-competency-framework-students?hub=84624'},
+ {cat:'design',stage:'Orient / Practice',name:'Stanford d.school — Starter Kit',zh:'低门槛的人本设计入口。通过活动接触用户理解、构思、原型和测试。',en:'A low-barrier entry to human-centred design through activities involving users, ideation, prototyping and testing.',url:'https://dschool.stanford.edu/tools/starter-kit'},
+ {cat:'design',stage:'Practice / Apply',name:'Stanford d.school — Design Abilities Workshop',zh:'训练处理模糊、向他人学习、综合信息、快速实验和有意识沟通等能力。',en:'Practice navigating ambiguity, learning from others, synthesis, rapid experimentation and deliberate communication.',url:'https://dschool.stanford.edu/tools/design-abilities-workshop'},
+ {cat:'communication',stage:'Reference / Practice',name:'Purdue OWL',zh:'开放写作参考库。适合作为真实写作任务的即时规范与练习辅助。',en:'An open writing reference best used alongside real writing tasks for conventions and practice support.',url:'https://owl.purdue.edu/owl/'},
+ {cat:'communication',stage:'Orient / Practice',name:'MIT — How to Speak',zh:'口头表达的短入口。完成后应转向真实技术汇报、录像与同行反馈。',en:'A compact entry to oral communication; follow it with real presentations, recorded review and peer feedback.',url:'https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/'},
+ {cat:'humanities',stage:'Orient / Learn',name:'Open Yale Courses',zh:'开放本科课程库，适合心理、经济、历史、哲学、文学等通识领域建立第一张地图。',en:'Open undergraduate courses useful for building a first map of psychology, economics, history, philosophy and literature.',url:'https://oyc.yale.edu/'},
+ {ca
