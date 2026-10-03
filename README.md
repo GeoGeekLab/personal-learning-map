@@ -93,7 +93,7 @@ Orient → Learn → Practice → Apply → Create
 
 ## Interface
 
-The site is a single-file bilingual research map with:
+The site is a bilingual interactive research map with:
 
 - 中文 / English views;
 - a floating section index;
@@ -116,14 +116,17 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Project files
+## Repository layout
 
 ```text
 .
-├── index.html                  # interactive bilingual map
-├── README.md                   # project overview
-└── .github/workflows/pages.yml # GitHub Pages deployment
+├── index.html            # compatibility-safe site entrypoint
+├── assets/
+│   └── raw.part*.txt     # exact ordered payload of the interactive report
+└── README.md             # research-project overview
 ```
+
+The public site is served from the `gh-pages` branch. The branch mirrors the tested state of `main`.
 
 ## Primary public references
 
