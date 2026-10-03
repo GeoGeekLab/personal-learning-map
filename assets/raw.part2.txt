@@ -1,0 +1,114 @@
+s:1fr}.claim,.claim:nth-child(2),.claim:nth-child(3n){padding:18px 0;border-right:0;border-bottom:1px solid var(--grid);min-height:auto}.claim:last-child{border-bottom:0}
+  .cap-row{grid-template-columns:44px 1fr}.cap-row .path{grid-column:2}.stage-strip{grid-template-columns:1fr}.stage{border-right:0;border-bottom:1px solid var(--grid)}.stage:last-child{border-bottom:0}
+  .resource{grid-template-columns:1fr 110px}.resource p{grid-column:1/-1}.resource .cat{text-align:left}
+  .method-grid{grid-template-columns:1fr}.method,.method:nth-child(even){border-right:0;padding:20px 0}
+  .source{grid-template-columns:38px 1fr}.source p{grid-column:2}
+}
+@media(max-width:640px){
+  .shell{width:calc(100% - 28px)}
+  .floating-index{display:none}
+  .floating-controls{left:12px;right:12px;justify-content:flex-end}
+  h1{font-size:clamp(36px,11vw,52px)}
+  .dek{font-size:20px}
+  .sec-head{grid-template-columns:42px minmax(0,1fr)}
+}
+@media print{
+  body{background:#fff}.shell{display:block;width:100%}.floating-index,.floating-controls{display:none!important}.main{padding:0}.resource-tools{display:none}.table-wrap{overflow:visible}section{break-inside:auto}.cap-row,.method,.source{break-inside:avoid}.footer{margin-top:30px}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+<main class="main">
+
+<div class="lang-page" data-lang="zh">
+<header class="hero" data-section="top">
+  <div class="kicker">Capability benchmark · curriculum architecture</div>
+  <h1>未来能力与<b>终身学习架构</b></h1>
+  <p class="dek">以全球劳动力研究、未来教育框架、顶尖大学培养结构与学习科学为外部基准，对现有 14 模块进行能力映射，并给出可从开放资源进入的长期学习路径。</p>
+  <div class="meta-line"><span>范围：个人终身学习系统</span><span>证据：官方框架 / 大学要求 / 学习研究</span><span>版本：2026-10-03</span></div>
+</header>
+
+<section data-section="scope">
+  <div class="sec-head"><div class="sec-no">01</div><h2>范围与方法</h2></div>
+  <p class="lead">本报告按来源功能分层使用证据：WEF 描述雇主技能需求；OECD 与 UNESCO 提供教育目标与能力框架；大学要求体现本科培养结构；学习科学研究说明知识与技能的形成、保持与迁移机制。</p>
+  <div class="claim-grid">
+    <div class="claim"><div class="num">4</div><h3>证据类型</h3><p>劳动力市场、未来教育、大学培养、学习科学。四类证据分别承担需求、目标、课程结构与学习机制的判断。</p></div>
+    <div class="claim"><div class="num">10</div><h3>能力域</h3><p>用于定义长期发展目标，并通过不同课程、项目与生活实践逐步形成。</p></div>
+    <div class="claim"><div class="num">14</div><h3>现有模块</h3><p>继续作为知识与生活领域目录。模块负责组织内容，能力域负责定义表现标准。</p></div>
+  </div>
+  <div class="note"><b>来源定位。</b> WEF《Future of Jobs 2025》提供企业雇主对当前与上升技能的判断；OECD Learning Compass 提供面向 2030 及以后发展的教育愿景，涵盖 student agency、well-being、知识/技能/态度/价值与 transformative competencies；UNESCO 四维框架用于组织 AI 能力教育。<span class="cite">[1–3]</span></div>
+  <div class="subhead">跨框架综合</div>
+  <p class="lead">跨框架反复出现的结构可以概括为：基础健康与自我调节；自主学习；数量、证据与科学推理；创造与设计；沟通协作；数字与 AI 素养；伦理、公民与社会理解；环境与可持续性；以及一个具有真实深度的专业领域。个人财务、家庭、法律与照护归入个人治理层，补足大学通识与职业能力框架覆盖较少的长期生活责任。</p>
+</section>
+
+<section data-section="benchmark">
+  <div class="sec-head"><div class="sec-no">02</div><h2>机构框架映射</h2></div>
+  <p class="lead">矩阵记录公开框架中可直接辨认的对应关系。符号表示该主题在所引框架中的明确程度，用于比较覆盖结构。</p>
+  <div class="legend"><span class="mark">●</span> 明确要求或框架核心　<span class="mark">◐</span> 明确相关　<span>—</span> 该来源覆盖较少</div>
+  <div class="table-wrap">
+    <table class="benchmark-table">
+      <colgroup><col class="c0"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="ci"><col class="c9"></colgroup>
+      <thead><tr><th>能力域</th><th>WEF</th><th>OECD</th><th>UNESCO AI</th><th>Stanford</th><th>Harvard</th><th>MIT</th><th>Minerva</th><th>d.school</th><th>本体系定位</th></tr></thead>
+      <tbody>
+        <tr><td>1. 身体与心理承载</td><td>● 韧性；自我意识</td><td>● well-being；health foundations</td><td>◐ human-centred</td><td>—</td><td>—</td><td>● PE&W</td><td>◐ adaptation</td><td>◐ ambiguity</td><td>基础条件</td></tr>
+        <tr><td>2. 自主学习与元认知</td><td>● curiosity & lifelong learning</td><td>● student agency</td><td>◐ lifelong AI learning</td><td>◐ breadth toolkit</td><td>◐ breadth + concentration</td><td>◐ departmental depth</td><td>● transferable concepts / habits</td><td>● design your design work</td><td>控制层</td></tr>
+        <tr><td>3. 数量、证据与科学推理</td><td>● analytical thinking</td><td>● literacy / numeracy / data</td><td>◐ critical judgement</td><td>● AQR / FR / SMA</td><td>● QRD</td><td>● math / science / lab</td><td>● formal analyses</td><td>◐ synthesis</td><td>通用认知骨架</td></tr>
+        <tr><td>4. 系统、复杂性与决策</td><td>● systems thinking</td><td>● reconcile tensions & dilemmas</td><td>◐ AI system design</td><td>◐ AQR / SI</td><td>◐ social & science inquiry</td><td>◐ engineering / systems</td><td>◐ complex systems application</td><td>◐ concrete ↔ abstract</td><td>跨领域应用</td></tr>
+        <tr><td>5. 创造、设计与实验</td><td>● creative thinking；◐ design/UX</td><td>● creating new value</td><td>◐ Create level</td><td>● Creative Expression</td><td>◐ Aesthetics & Culture</td><td>◐ design / engineering practice</td><td>● creative thinking</td><td>● 8 design abilities</td><td>横向能力</td></tr>
+        <tr><td>6. 沟通、协作与领导</td><td>● leadership；empathy；talent</td><td>◐ co-agency</td><td>◐ responsible participation</td><td>◐ course-based practice</td><td>◐ writing / seminar work</td><td>● CI-H + CI-M</td><td>● communication + interaction</td><td>● learn from others；communicate</td><td>横向能力</td></tr>
+        <tr><td>7. 数字、计算与 AI</td><td>● AI/data；cyber；tech literacy</td><td>● digital & data literacy</td><td>● 4 dimensions × 3 levels</td><td>◐ quantitative / formal / science</td><td>◐ science & engineering</td><td>● science / engineering majors</td><td>◐ computational approaches</td><td>◐ prototyping</td><td>稳定内核 + 动态工具</td></tr>
+        <tr><td>8. 人文、伦理、公民与文明理解</td><td>◐ global citizenship</td><td>● responsibility / values</td><td>● ethics / human-centred</td><td>● AII / ER / EDP / SI</td><td>● 4 Gen Ed categories</td><td>● HASS</td><td>◐ global contexts</td><td>◐ people & contexts</td><td>通识与判断</td></tr>
+        <tr><td>9. 专业深度与价值创造</td><td>● role-specific skill needs</td><td>◐ knowledge + agency</td><td>◐ system design</td><td>● major + breadth</td><td>● concentration + breadth</td><td>● departmental program</td><td>● concentration / capstone</td><td>◐ real projects</td><td>一深多宽</td></tr>
+        <tr><td>10. 人生治理与长期责任</td><td>◐ resilience / self-efficacy</td><td>● responsibility / well-being</td><td>◐ responsibility</td><td>—</td><td>—</td><td>◐ PE&W / advising</td><td>◐ life / global contexts</td><td>◐ intentional design</td><td>终身系统扩展层</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note"><b>环境与可持续性。</b> WEF 将 environmental stewardship 列入 2025–2030 年上升最快的十类技能之一；OECD 将 well-being 与 sustainability 延伸到个人、他人与地球。该维度作为横向能力，嵌入世界模型、工程技术、资源与能源理解以及个人长期决策。<span class="cite">[1][2]</span></div>
+</section>
+
+<section data-section="audit">
+  <div class="sec-head"><div class="sec-no">03</div><h2>现有 14 模块：定位与调整</h2></div>
+  <p class="lead">十四个模块按六种发展方式管理：长期基础、横向能力、专业主轴、生命周期学习、参考知识与快速变化的工具栈。该结构保留知识广度，并把学习预算集中到当前需要推进的能力层级。</p>
+  <div class="table-wrap">
+  <table class="audit-table">
+    <colgroup><col class="a0"><col class="a1"><col class="a2"><col class="a3"><col class="a4"><col class="a5"></colgroup>
+    <thead><tr><th>#</th><th>现有模块</th><th>定位</th><th>对应能力</th><th>证据对齐后的调整</th><th>主要训练形式</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>现代健康、中医与长期养生</td><td><span class="tag">Foundation</span><span class="tag muted">Reference split</span></td><td>身心承载 / 人生治理</td><td>以现代医学、预防、睡眠、营养、运动与求医标准构成健康决策主干。传统实践归入文化或补充实践；疾病治疗与草药使用采用证据、安全审查与专业医疗协作。<span class="cite">[12][13]</span></td><td>公共卫生指南、个人记录、必要时专业医疗。</td></tr>
+      <tr><td>2</td><td>运动、体能、体态与身体控制</td><td><span class="tag">Foundation</span></td><td>身体与心理承载</td><td>维持力量、心肺、活动能力与伤病管理。学习重心放在长期训练一致性、指标反馈与动作质量。<span class="cite">[6][13]</span></td><td>周期训练、简单指标、年度能力基线。</td></tr>
+      <tr><td>3</td><td>心理稳定、自我调节与行为改变</td><td><span class="tag">Foundation</span></td><td>身心承载 / 自主学习</td><td>保留行为改变、压力与注意力训练，并建立从自助实践到专业心理或医疗服务的升级路径。</td><td>低剂量持续实践；在真实压力情境中复盘。</td></tr>
+      <tr><td>4</td><td>数学、逻辑、概率、博弈与决策</td><td><span class="tag">Core reasoning</span></td><td>数量证据 / 系统决策</td><td>优先建立概率、统计、数据解释与形式推理。线性代数、优化、博弈、因果等内容由专业问题和决策需求触发。<span class="cite">[4–6]</span></td><td>做题、预测、真实数据、实验与决策日志。</td></tr>
+      <tr><td>5</td><td>中文、英语、写作、修辞与公开表达</td><td><span class="tag">Cross-cutting</span></td><td>沟通协作领导</td><td>进阶阶段把写作、英语、技术文档与口头汇报嵌入专业学习和项目。MIT 的沟通要求采用跨通识与专业阶段的整合方式。<span class="cite">[6]</span></td><td>备忘录、设计文档、公开讲解、同行编辑。</td></tr>
+      <tr><td>6</td><td>个人形象、声音、表情与非语言表达</td><td><span class="tag muted">Maintenance</span></td><td>沟通协作</td><td>保留为场景化维护能力。判断依据采用可观察行为、情境信息与长期一致性记录。</td><td>季度录像校准；重要场景前专项练习。</td></tr>
+      <tr><td>7</td><td>社会心理学、人性、识人和权力现实</td><td><span class="tag">Social inquiry</span></td><td>沟通 / 人文社会 / 系统</td><td>重点训练行为、激励、制度、群体过程与长期一致性分析，并以可验证证据支持人物与组织判断。</td><td>社会心理学底座、案例、组织与关系复盘。</td></tr>
+      <tr><td>8</td><td>沟通、谈判、博弈与组织政治</td><td><span class="tag">Applied</span></td><td>沟通协作领导 / 系统决策</td><td>保留。理论训练与真实谈判、冲突、资源协调和团队责任绑定。</td><td>谈判准备 → 执行 → 结果对照 → 复盘。</td></tr>
+      <tr><td>9</td><td>软件工程、系统设计、技术领导与商业价值</td><td><span class="tag">Major axis</span></td><td>专业深度 / 数字计算 / 价值创造</td><td>作为纵向专业主轴，学习预算高于一般通识模块。进阶内容由真实工作问题、生产系统和用户价值决定。</td><td>生产系统、设计文档、事故复盘、代码与团队评审。</td></tr>
+      <tr><td>10</td><td>AI 高效使用、工作流、代理与评估</td><td><span class="tag">Stable core</span><span class="tag muted">Living edge</span></td><td>数字计算 AI / 创造设计</td><td>稳定层包括人本原则、伦理、AI 基础、能力范围、评估、安全与人机分工；动态层包括 RAG、Agent、MCP 和具体框架。UNESCO 的 Understand–Apply–Create 可作为 AI 学习深度参照。<span class="cite">[3]</span></td><td>任务基准、eval、workflow、生产使用、回归测试。</td></tr>
+      <tr><td>11</td><td>个人财务、投资、保险、法律与风险管理</td><td><span class="tag">Life governance</span></td><td>人生治理 / 系统决策</td><td>财务与风险管理长期维护；法律内容按所在地、职业与生命周期事件进行 Just-in-Time 学习，以合同、权利义务和现实事务为主要入口。</td><td>现金流、净资产、保险审计、IPS、合同核对。</td></tr>
+      <tr><td>12</td><td>经济学、历史、社会学、政治与世界模型</td><td><span class="tag">General education</span></td><td>人文伦理文明 / 系统复杂性</td><td>从“学科覆盖”转向社会运行模型：制度、市场、技术、人口、能源、气候、生态与资源约束。环境与可持续性在此形成主要知识底座。<span class="cite">[1][2][4][5]</span></td><td>经典模型、历史案例、一手数据、多模型比较。</td></tr>
+      <tr><td>13</td><td>亲密关系、家庭、育儿与照护</td><td><span class="tag muted">Lifecycle</span></td><td>人生治理 / 沟通协作</td><td>关系沟通保持长期实践；育儿、照护、遗产等内容在生命周期事件前进入专项学习。</td><td>关系协议、冲突复盘、阶段性专项学习。</td></tr>
+      <tr><td>14</td><td>审美、创造、传统文化、哲学与生命意义</td><td><span class="tag">General education</span><span class="tag">Creativity</span></td><td>创造设计 / 人文伦理文明</td><td>把“创造”从单一文化模块中抽出，作为跨专业能力训练；审美、哲学与传统文化继续承担解释、价值判断与意义建构。Stanford 将 Creative Expression 与审美解释、伦理推理分设，适合参考。<span class="cite">[4]</span></td><td>作品分析、亲自创作、哲学写作、文化体验。</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section data-section="capabilities">
+  <div class="sec-head"><div class="sec-no">04</div><h2>十个能力域与五级学习深度</h2></div>
+  <p class="lead">十个能力域定义长期能力目标；五级模型描述当前掌握深度。五级模型由本报告综合学习科学、大学培养实践与 UNESCO Understand–Apply–Create 等框架，用于跨领域进度管理。<span class="cite">[3]</span></p>
+  <div class="stage-strip">
+    <div class="stage"><div class="n">0</div><b>Orient</b><p>理解领域边界、典型问题、能力标准和常见误区。</p></div>
+    <div class="stage"><div class="n">1</div><b>Learn</b><p>完成高质量基础主干，建立概念、事实和方法框架。</p></div>
+    <div class="stage"><div class="n">2</div><b>Practice</b><p>通过做题、演练、实验、写作或模拟形成稳定表现。</p></div>
+    <div class="stage"><div class="n">3</div><b>Apply</b><p>在真实项目、工作、关系或生活决策中调用能力。</p></div>
+    <div class="stage"><div class="n">4</div><b>Create</b><p>解决开放问题，形成作品、方法、教学或团队成果。</p></div>
+  </div>
+  <div class="cap-list">
+    <div class="cap-row"><div class="cap-no">01</div><div><h3>身体与心理承载</h3><div class="def">健康、睡眠、体能、情绪调节、压力恢复和安全。</div></div><div class="path"><b>学习路径：</b>公共卫生与健康基线 → 个体习惯 → 指标反馈 → 专业服务边界。<br><b>表现证据：</b>长期训练持续性、睡眠稳定性、基本健康行为和及时求助能力。</div></div>
+    <div class="cap-row"><div class="cap-no">02</div><div><h3>自主学习与元认知</h3><div class="def">定义问题、诊断前置、选择资源、自测掌握、管理注意力。</div></div><div class="path"><b>学习路径：</b>学习科学 → 小型学习项目 → 自测与反馈 → 迁移测试。<br><b>表现证据：</b>面对陌生领域能建立学习地图、识别专家标准、调整策略并停止低收益学习。</div></div>
+    <div class="cap-row"><div class="cap-no">03</div><div><h3>数量、证据与科学推理</h3><div class="def">逻辑、概率、统计、实验、因果、数据与模型意识。</div></div><div class="path"><b>学习路径：</b>概率 → 统计与数据 → 实验/因果 → 专业数学。Stanford、Harvard 与 MIT 都以不同形式要求数量或科学训练。<span class="cite">[4–6]</span><br><b>表现证据：</b>能说明数据来源、假设、不确定性、替代解释和反证条件。</div></div>
+    <div class="cap-row"><div class="cap-no">04</div><div><h3>系统、复杂性与决策</h3><div class="def">反馈、延迟、二阶效应、博弈、风险、情景和不可逆性。</div></div><div class="path"><b>学习路径：</b>因果图 → feedback / stock-flow → 小模型 → 组织、市场与个人问题。<br><b>表现证据：</b>能识别约束、激励、反馈回路、二阶影响，并记录预测与复盘。</div></div>
+    <div class="cap-row"><div class="cap-no">05</div><div><h3>创造、设计与实验</h3><div class="def">发现问题、理解用户、处理模糊、原型、实验和创造新价值。</div></div><div class="path"><b>学习路径：</b>d.school 入门 → 小型设计挑战 → 用户研究 → 原型 → 真实测试。OECD 的 creating new value 与 Stanford d.school 的设计能力可作为外部参照。<span class="cite">[2][8]</span><br><b>表现证据：</b>作品经历真实对象、现实约束、原型测试与外部反馈。</div></div>
+    <div class="cap-row"><div class="cap-no">06</div><div><h3>沟通、协作与领导</h3><div class="def">写作、演讲、倾听、谈判、冲突、反馈和组织协作。</div></div><div class="path"><b>学习路径：</b>清晰写作 → 口头表达 → 困难对话 → 谈判 → 真实团队责任。<br><b>表现证据：</b>能把复杂内容写清、说清、协商清，并根据受众和反馈调整。</div></div>
+    <div class="cap-row"><div class="cap-no">07</div><div><h3>数字、计算与 AI</h3><div class="def">计算思维、数据、软件、安全、AI 基础、评估、人机协作与系统设计。</div></div><div class="path">
