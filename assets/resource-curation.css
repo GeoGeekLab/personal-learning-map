@@ -1,0 +1,35 @@
+/* Personal Learning Map — resource curation layer */
+.resource-curation{margin:18px 0 20px;padding:16px 0;border-top:1px solid var(--grid);border-bottom:1px solid var(--grid)}
+.resource-curation-head{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.resource-curation-copy{max-width:760px}
+.resource-curation-copy b{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--txt)}
+.resource-curation-copy p{margin:6px 0 0;font-size:12.5px;line-height:1.7;color:var(--mut)}
+.resource-tier-filters{display:flex;gap:6px;flex-wrap:wrap}
+.resource-tier-btn{appearance:none;border:1px solid var(--grid);background:transparent;color:var(--mut);padding:7px 9px;font-size:10.5px;font-weight:750;letter-spacing:.035em;cursor:pointer}
+.resource-tier-btn:hover,.resource-tier-btn.active{border-color:var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.resource-tier-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+.resource-tier-legend div{border-left:2px solid var(--grid);padding-left:10px}
+.resource-tier-legend b{display:block;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--txt);margin-bottom:3px}
+.resource-tier-legend span{display:block;font-size:11.5px;line-height:1.55;color:var(--mut)}
+.resource{grid-template-columns:230px 132px minmax(0,1fr) 96px}
+.resource .resource-main{min-width:0}
+.resource .resource-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:7px}
+.resource-tier{display:inline-block;font-size:9.5px;font-weight:850;letter-spacing:.065em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:1px;color:var(--accent)}
+.resource-tier[data-tier="advanced"]{color:var(--txt)}
+.resource-tier[data-tier="living"]{color:var(--mut)}
+.resource-institution{font-size:10px;color:var(--mut);font-weight:700}
+.resource-detail{margin-top:7px!important;font-size:11.5px!important;line-height:1.62!important;color:var(--lab)!important}
+.resource-detail b{color:var(--txt);font-weight:750}
+.resource .stage-label{line-height:1.5}
+@media(max-width:980px){
+  .resource{grid-template-columns:minmax(0,1fr) 130px}
+  .resource p,.resource .resource-main{grid-column:1/-1}
+  .resource .cat{text-align:left}
+}
+@media(max-width:640px){
+  .resource-tier-legend{grid-template-columns:1fr}
+  .resource-curation-head{display:block}
+  .resource-tier-filters{margin-top:12px}
+  .resource{grid-template-columns:1fr}
+  .resource p,.resource .resource-main{grid-column:auto}
+}
