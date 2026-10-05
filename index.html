@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Personal Learning Map</title>
+<link rel="preload" href="assets/typography.css?v=20261003c" as="style">
+<link rel="preload" href="assets/interaction.css?v=20261005b" as="style">
+<link rel="preload" href="assets/layout.css?v=20261005a" as="style">
+<link rel="preload" href="assets/resource-curation.css?v=20261005a" as="style">
+<link rel="preload" href="assets/open-lectures.js?v=20261005b" as="script">
+<link rel="preload" href="assets/interaction.js?v=20261005b" as="script">
+<link rel="preload" href="assets/typography.js?v=20261003c" as="script">
 <style>
 html,body{margin:0;min-height:100%;background:#F7F2EB;color:#081F5C;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .loader{min-height:100vh;display:grid;place-items:center;padding:32px}.loader-inner{max-width:520px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.68}.title{font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1.08;margin:14px 0 12px}.status{font-size:13px;line-height:1.7;opacity:.76}.bar{height:2px;background:rgba(8,31,92,.12);margin-top:22px;overflow:hidden}.bar:after{content:"";display:block;width:42%;height:100%;background:#334EAC;animation:move 1.1s ease-in-out infinite alternate}@keyframes move{from{transform:translateX(-100%)}to{transform:translateX(240%)}}
@@ -26,10 +33,85 @@ html,body{margin:0;min-height:100%;background:#F7F2EB;color:#081F5C;font-family:
       if(!r.ok) throw new Error(path+' '+r.status);
       return r.text();
     }));
+
     const html=parts.join('');
+    const bootHead=`
+<script>document.documentElement.setAttribute('data-plm-boot','loading');<\/script>
+<style id="plm-boot-gate">
+html[data-plm-boot="loading"],html[data-plm-boot="loading"] body{min-height:100%;background:#F7F2EB!important}
+html[data-plm-boot="loading"] body{overflow:hidden!important}
+html[data-plm-boot="loading"] body>*:not(#plm-boot-cover){visibility:hidden!important}
+#plm-boot-cover{position:fixed!important;inset:0!important;z-index:2147483647!important;display:grid!important;place-items:center!important;padding:32px!important;box-sizing:border-box!important;background:#F7F2EB!important;color:#081F5C!important;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;visibility:visible!important;opacity:1;transition:opacity 160ms ease}
+#plm-boot-cover .plm-boot-inner{width:min(520px,100%)}
+#plm-boot-cover .plm-boot-eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.68}
+#plm-boot-cover .plm-boot-title{font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1.08;margin:14px 0 12px}
+#plm-boot-cover .plm-boot-status{font-size:13px;line-height:1.7;opacity:.76}
+#plm-boot-cover .plm-boot-bar{height:2px;background:rgba(8,31,92,.12);margin-top:22px;overflow:hidden}
+#plm-boot-cover .plm-boot-bar:after{content:"";display:block;width:42%;height:100%;background:#334EAC;animation:plmBootMove 1.1s ease-in-out infinite alternate}
+@keyframes plmBootMove{from{transform:translateX(-100%)}to{transform:translateX(240%)}}
+html[data-plm-boot="ready"] #plm-boot-cover{opacity:0;pointer-events:none}
+@media(prefers-reduced-motion:reduce){#plm-boot-cover{transition:none}#plm-boot-cover .plm-boot-bar:after{animation:none;width:100%;opacity:.65}}
+</style>
+<link rel="stylesheet" href="assets/typography.css?v=20261003c">
+<link rel="stylesheet" href="assets/interaction.css?v=20261005b">
+<link rel="stylesheet" href="assets/layout.css?v=20261005a">
+<link rel="stylesheet" href="assets/resource-curation.css?v=20261005a">`;
+
+    const bootCover=`<div id="plm-boot-cover" role="status" aria-live="polite" aria-label="Loading Personal Learning Map"><div class="plm-boot-inner"><div class="plm-boot-eyebrow">GeoGeekLab · Research Map</div><div class="plm-boot-title">Personal Learning Map</div><div class="plm-boot-status" id="plm-boot-status">Preparing the final interface…</div><div class="plm-boot-bar"></div></div></div>`;
+
+    const bootRelease=`<script>
+(()=>{
+  const root=document.documentElement;
+  const cover=document.getElementById('plm-boot-cover');
+  const status=document.getElementById('plm-boot-status');
+  const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const started=performance.now();
+  let released=false;
+
+  const coreReady=()=>{
+    const shell=document.querySelector('.shell');
+    const overview=document.querySelector('.overview-map');
+    const resources=document.querySelector('[data-section="resources"]');
+    return !!(shell&&overview&&resources);
+  };
+
+  const reveal=()=>{
+    if(released) return;
+    released=true;
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      root.setAttribute('data-plm-boot','ready');
+      document.body.style.removeProperty('overflow');
+      const remove=()=>cover&&cover.remove();
+      if(reduced) remove(); else window.setTimeout(remove,190);
+    }));
+  };
+
+  const settle=()=>{
+    if(document.fonts&&document.fonts.ready){
+      Promise.race([
+        document.fonts.ready.catch(()=>{}),
+        new Promise(resolve=>setTimeout(resolve,700))
+      ]).finally(reveal);
+    }else reveal();
+  };
+
+  const poll=()=>{
+    if(coreReady()) return settle();
+    if(performance.now()-started>2500){
+      if(status) status.textContent='Finalizing the interface…';
+      return settle();
+    }
+    requestAnimationFrame(poll);
+  };
+  poll();
+})();
+<\/script>`;
+
     const enhanced=html
-      .replace('</head>','<link rel="stylesheet" href="assets/typography.css?v=20261003c"><link rel="stylesheet" href="assets/interaction.css?v=20261005b"><link rel="stylesheet" href="assets/layout.css?v=20261005a"><link rel="stylesheet" href="assets/resource-curation.css?v=20261005a"></head>')
-      .replace('</body>','<script src="assets/open-lectures.js?v=20261005b"><\/script><script src="assets/interaction.js?v=20261005b"><\/script><script src="assets/typography.js?v=20261003c"><\/script></body>');
+      .replace('</head>',bootHead+'\n</head>')
+      .replace('<body>','<body>'+bootCover)
+      .replace('</body>','<script src="assets/open-lectures.js?v=20261005b"><\/script><script src="assets/interaction.js?v=20261005b"><\/script><script src="assets/typography.js?v=20261003c"><\/script>'+bootRelease+'</body>');
+
     document.open();
     document.write(enhanced);
     document.close();
