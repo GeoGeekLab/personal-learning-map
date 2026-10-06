@@ -4,28 +4,32 @@
   font-kerning:normal;
 }
 
-/* CJK line breaking: keep punctuation and lexical units visually coherent. */
+/* Long-form body copy should use the full reading column. */
+.lang-page .lead{max-width:none}
+
+/* CJK prose should fill the available line width naturally. */
 .lang-page[data-lang="zh"]{
   line-break:strict;
   word-break:normal;
   overflow-wrap:normal;
 }
+
+/* Keep balanced wrapping only for headings. */
 .lang-page[data-lang="zh"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3){
   line-break:strict;
   word-break:normal;
   text-wrap:balance;
 }
-.lang-page[data-lang="zh"] :where(.dek,.lead){
+
+/* Body copy must not rebalance lines or force early wrapping. */
+.lang-page[data-lang="zh"] :where(.dek,.lead,.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
   line-break:strict;
   word-break:normal;
-  text-wrap:balance;
+  text-wrap:wrap;
 }
-.lang-page[data-lang="zh"] :where(.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
-  line-break:strict;
-  word-break:normal;
-  text-wrap:pretty;
-}
-.cjk-word{white-space:nowrap}
+
+/* Lexical helper spans may wrap like ordinary Chinese text. */
+.cjk-word{white-space:normal}
 
 /* English prose: keep final lines from becoming isolated single words. */
 .lang-page[data-lang="en"]{
@@ -34,10 +38,10 @@
   overflow-wrap:normal;
   hyphens:auto;
 }
-.lang-page[data-lang="en"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3,.dek,.lead){
+.lang-page[data-lang="en"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3,.dek){
   text-wrap:balance;
 }
-.lang-page[data-lang="en"] :where(.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
+.lang-page[data-lang="en"] :where(.lead,.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
   text-wrap:pretty;
 }
 
@@ -50,5 +54,6 @@
 :where(th,td){white-space:normal}
 
 @media(max-width:640px){
-  .lang-page :where(.dek,.lead){text-wrap:pretty}
+  .lang-page[data-lang="zh"] :where(.dek,.lead){text-wrap:wrap}
+  .lang-page[data-lang="en"] :where(.dek,.lead){text-wrap:pretty}
 }
