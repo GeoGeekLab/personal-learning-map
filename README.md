@@ -1,112 +1,200 @@
 # Personal Learning Map
 
-**A research-oriented capability architecture for lifelong learning.**
+**Future Capabilities & Lifelong Learning Architecture**
 
 [Open the interactive map →](https://geogeeklab.github.io/personal-learning-map/)
 
-## About
-
-**Personal Learning Map** is an independent research and design project by **GeoGeekLab**. It turns long-horizon personal development into a navigable capability system: what to learn, how deeply to learn it, how to test transfer, and where high-quality open learning paths begin.
-
-The project treats lifelong learning as an architecture problem rather than a reading-list problem. Its structure separates:
-
-- **capability domains** — what a person should be able to do;
-- **knowledge modules** — the fields that supply concepts and models;
-- **development depth** — Orient → Learn → Practice → Apply → Create;
-- **evidence of capability** — observable work, decisions, performance, feedback, and transfer;
-- **learning resources** — courses, books, exercises, projects, mentors, and communities.
+Personal Learning Map is a bilingual research map for long-horizon capability development. It connects capability domains, learning depth, institutional benchmarks, open courses, practice, and evidence into one navigable system.
 
 ```text
-institutions + research
+capability architecture
         ↓
-capability model
+learning depth
         ↓
-learning paths
+quarterly focus
         ↓
-practice + projects
+practice + application
         ↓
-feedback + transfer
+evidence + feedback
         ↓
 long-term capability
 ```
 
-## Reference base
+## Learning architecture
 
-The map is benchmarked against public frameworks, curricula, and research from institutions including:
+The map is organized into four bands and ten capability domains.
 
-| Institution / source | Primary contribution to the map |
-| --- | --- |
-| **World Economic Forum** | Employer-reported skill demand and emerging capability trends |
-| **OECD Learning Compass 2030** | Agency, well-being, responsibility, transformative competencies |
-| **UNESCO** | Human-centred AI competency, ethics, application, system design |
-| **Stanford University** | Breadth of reasoning, scientific inquiry, ethics, social analysis, creative expression |
-| **Harvard University** | General education, quantitative reasoning, disciplinary breadth |
-| **MIT** | Mathematics, science, engineering depth, communication, HASS, physical education |
-| **Minerva University** | Transferable thinking, communication, interaction, applied capstone work |
-| **Stanford d.school** | Design abilities, ambiguity, experimentation, prototyping and user-centred creation |
-| **Learning-science literature** | Retrieval practice, spacing, feedback, transfer and deliberate practice |
+### Foundation
 
-The external frameworks serve different purposes. The site preserves those purposes and uses their overlap to organize a practical lifelong-learning architecture.
+1. **Physical & psychological capacity**  
+   Health, energy, emotional regulation, attention, resilience, recovery.
 
-## Architecture
+2. **Learning agency & metacognition**  
+   Self-directed learning, reflection, memory, deliberate practice, feedback, learning strategy.
 
-The current map uses ten capability domains:
+### Cognitive core
 
-1. Physical and psychological capacity
-2. Self-directed learning and metacognition
-3. Quantitative, evidential and scientific reasoning
-4. Systems, complexity and decision-making
-5. Creativity, design and experimentation
-6. Communication, collaboration and leadership
-7. Digital, computational and AI capability
-8. Humanities, ethics, citizenship and civilizational understanding
-9. Professional depth and value creation
-10. Life stewardship and long-term responsibility
+3. **Quantitative, evidential & scientific reasoning**  
+   Mathematics, probability, statistics, modelling, evidence, scientific reasoning.
 
-Environmental sustainability is treated as a **cross-cutting dimension** across world models, engineering decisions, resource and energy literacy, lifestyle choices, and long-term risk.
+4. **Systems, complexity & decision-making**  
+   Systems thinking, incentives, uncertainty, trade-offs, strategy, judgement, decision quality.
 
-## Learning-depth model
+### Cross-cutting capability
+
+5. **Creativity, design & experimentation**  
+   Problem framing, idea generation, prototyping, iteration, visual and spatial judgement.
+
+6. **Communication, collaboration & leadership**  
+   Writing, speaking, listening, negotiation, teamwork, coordination, leadership.
+
+7. **Digital, computational & AI capability**  
+   Computing, programming, data, algorithms, AI methods, digital systems, technical fluency.
+
+8. **Humanities, ethics, citizenship & civilizational understanding**  
+   History, philosophy, literature, institutions, ethics, politics, culture, civic judgement.
+
+### Integration
+
+9. **Professional depth & value creation**  
+   Domain mastery, craft, research, technical depth, professional judgement, original work.
+
+10. **Life governance & long-term responsibility**  
+    Finance, law, family, care, health decisions, stewardship, long-term planning.
+
+Environmental sustainability runs across the architecture through energy, resources, engineering, policy, lifestyle, risk, and long-term responsibility.
+
+## Development depth
 
 ```text
 Orient → Learn → Practice → Apply → Create
 ```
 
-| Stage | Evidence |
+| Stage | Capability evidence |
 | --- | --- |
-| **Orient** | Can define the field, standards, core questions and common errors |
-| **Learn** | Can explain and use the foundational concepts and methods |
-| **Practice** | Can perform reliably through exercises, simulations, writing or experiments |
-| **Apply** | Can use the capability in real work, decisions, relationships or projects |
-| **Create** | Can solve open problems, produce original work, teach or lead others |
+| **Orient** | Can identify the field, core questions, standards, vocabulary, and common errors |
+| **Learn** | Can explain and use foundational concepts, models, and methods |
+| **Practice** | Can perform reliably through exercises, simulations, writing, experiments, and drills |
+| **Apply** | Can use the capability in real projects, decisions, work, relationships, and field situations |
+| **Create** | Can solve open problems, produce original work, teach, lead, or build new systems |
 
-## Design principles
+The depth model is shared across all ten domains, making progression visible without forcing every subject into the same pace.
 
-**One deep well, multiple strong beams.** Broad capability supports judgment and adaptability; professional depth produces high-value work.
+## Fourteen-module operating map
 
-**Stable Core / Living Edge.** Durable principles, models and methods are separated from fast-changing tools and technology stacks.
+The current audit tracks fourteen learning modules through six development modes:
 
-**Evidence over completion.** Courses and books are inputs. Capability is demonstrated through performance, projects, decisions, transfer and external feedback.
+- **Lifelong foundations** — capabilities maintained continuously;
+- **Cross-cutting capabilities** — abilities strengthened across many contexts;
+- **Professional major axis** — the main line of deep professional development;
+- **Lifecycle learning** — knowledge activated by changing life stages and responsibilities;
+- **Reference knowledge** — fields kept available for interpretation, comparison, and judgement;
+- **Fast-changing tool stacks** — technologies and practices that require frequent renewal.
 
-**Open entry points.** The map prioritizes high-quality resources that can be accessed without institutional enrollment, including Harvard CS50, MIT OpenCourseWare, Open Yale Courses, Stanford d.school and other public learning infrastructure.
+Quarterly implementation moves a small number of high-priority capabilities to the next depth level. Long-term foundations remain in maintenance, exploratory subjects can remain at Orient or Learn, and review focuses on application, task outcomes, and feedback quality.
 
-**Transfer by design.** Reasoning, communication and decision skills are trained inside multiple real contexts rather than treated as isolated subjects.
+## Resource system
+
+The resource layer is organized by instructional role and learning stage.
+
+| Tier | Role |
+| --- | --- |
+| **Canonical** | Builds core concepts, methods, and foundational practice |
+| **Advanced** | Extends established foundations through deeper theory, harder technique, and more complex application |
+| **Living Edge** | Tracks current research, technology, and public questions |
+
+Each curated resource can carry:
+
+- capability category;
+- learning stage;
+- institution and format;
+- prerequisites;
+- intended use;
+- direct source link.
+
+The current map includes open courses and lecture series from institutions including **Yale, MIT, Harvard, Harvard GSD, Stanford, Oxford, and Princeton**, alongside open learning infrastructure from major universities and research organizations.
+
+The resource view supports search, category filtering, tier filtering, and direct movement from a capability domain into a suitable learning path.
+
+## Research base
+
+The architecture draws on public capability frameworks, university curricula, design education, and learning science.
+
+| Source | Contribution |
+| --- | --- |
+| **World Economic Forum** | Skill demand, capability trends, technological change |
+| **OECD Learning Compass 2030** | Agency, responsibility, well-being, transformative competencies |
+| **UNESCO** | Human-centred AI competency, ethics, application, system design |
+| **Stanford University** | Reasoning, scientific inquiry, ethics, social analysis, creative expression |
+| **Harvard University** | General education, quantitative reasoning, disciplinary breadth |
+| **MIT** | Mathematics, science, engineering depth, communication, HASS |
+| **Minerva University** | Transferable thinking, communication, interaction, applied capstone work |
+| **Stanford d.school** | Design abilities, ambiguity, experimentation, prototyping, user-centred creation |
+| **Learning-science literature** | Retrieval, spacing, feedback, transfer, deliberate practice |
 
 ## Interface
 
-The site is a bilingual interactive research map with:
+The current site includes:
 
-- 中文 / English views;
+- **中文 / English** views;
+- an interactive **Learning Architecture Overview** with direct jumps into capability domains;
 - a floating section index;
-- three Lieflat-derived color systems: **Palm · 椰林绿**, **Porcelain · 青瓷蓝**, and **Wire · 编辑部红**;
-- institutional benchmark matrices;
-- a 14-module audit;
+- a compact theme control with **Palm · 椰林绿**, **Porcelain · 青瓷蓝**, and **Wire · 编辑部红**;
+- institutional benchmark tables and a fourteen-module audit;
 - capability-depth mapping;
-- open learning entry points;
-- learning-method and source sections.
+- searchable and filterable open-learning resources;
+- canonical / advanced / living-edge resource tiers;
+- responsive tables with horizontal drag and scroll cues;
+- responsive typography with natural CJK line wrapping;
+- keyboard and ARIA state support for the main interactive controls.
+
+## Using the map
+
+A practical cycle is:
+
+```text
+01  See the full architecture
+02  Choose a capability domain
+03  Locate the current depth
+04  Select a small quarterly priority
+05  Choose resources at the right tier
+06  Practice in a real context
+07  Record evidence and feedback
+08  Move the capability forward
+```
+
+Breadth keeps the map connected. Depth comes from sustained work inside a smaller number of domains. Evidence closes the loop between learning and capability.
+
+## Repository
+
+```text
+.
+├── index.html
+├── assets/
+│   ├── raw.part1.txt
+│   ├── raw.part2.txt
+│   ├── raw.part3.txt
+│   ├── raw.part4.txt
+│   ├── raw.part5a.txt
+│   ├── raw.part5b.txt
+│   ├── raw.part6a.txt
+│   ├── raw.part6b.txt
+│   ├── interaction.css
+│   ├── interaction.js
+│   ├── layout.css
+│   ├── typography.css
+│   ├── typography.js
+│   ├── resource-curation.css
+│   ├── open-lectures.js
+│   └── editorial.js
+└── README.md
+```
+
+`index.html` assembles the ordered report payload, loads the interaction and editorial layers, and hands off to the final interface after the core map is ready.
 
 ## Run locally
 
-No build system is required.
+Serve the repository with any static HTTP server:
 
 ```bash
 git clone https://github.com/GeoGeekLab/personal-learning-map.git
@@ -114,21 +202,9 @@ cd personal-learning-map
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:8000`.
 
-## Repository layout
-
-```text
-.
-├── index.html            # compatibility-safe site entrypoint
-├── assets/
-│   └── raw.part*.txt     # exact ordered payload of the interactive report
-└── README.md             # research-project overview
-```
-
-The public site is served from the `gh-pages` branch. The branch mirrors the tested state of `main`.
-
-## Primary public references
+## Primary references
 
 - WEF — Future of Jobs Report 2025: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
 - OECD — Learning Compass 2030: https://www.oecd.org/en/data/tools/oecd-learning-compass-2030.html
@@ -139,10 +215,6 @@ The public site is served from the `gh-pages` branch. The branch mirrors the tes
 - Minerva — Four-Year Curriculum: https://www.minerva.edu/four-year-curriculum/
 - Stanford d.school — Design Abilities: https://dschool.stanford.edu/tools/design-abilities-workshop
 
-## Status
-
-The map is maintained as a living research artifact. Institutional frameworks, open resources and technology-specific learning paths can evolve; the capability architecture is revised when the underlying evidence or use case changes.
-
 ---
 
-**GeoGeekLab** · build maps for complicated things.
+**GeoGeekLab** · Personal Learning Map
