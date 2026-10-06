@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Personal Learning Map</title>
-<link rel="preload" href="assets/typography.css?v=20261003c" as="style">
+<link rel="preload" href="assets/typography.css?v=20261006b" as="style">
 <link rel="preload" href="assets/interaction.css?v=20261005b" as="style">
 <link rel="preload" href="assets/layout.css?v=20261005a" as="style">
 <link rel="preload" href="assets/resource-curation.css?v=20261005a" as="style">
@@ -52,12 +52,34 @@ html[data-plm-boot="loading"] body>*:not(#plm-boot-cover){visibility:hidden!impo
 html[data-plm-boot="ready"] #plm-boot-cover{opacity:0;pointer-events:none}
 @media(prefers-reduced-motion:reduce){#plm-boot-cover{transition:none}#plm-boot-cover .plm-boot-bar:after{animation:none;width:100%;opacity:.65}}
 </style>
-<link rel="stylesheet" href="assets/typography.css?v=20261003c">
+<link rel="stylesheet" href="assets/typography.css?v=20261006b">
 <link rel="stylesheet" href="assets/interaction.css?v=20261005b">
 <link rel="stylesheet" href="assets/layout.css?v=20261005a">
 <link rel="stylesheet" href="assets/resource-curation.css?v=20261005a">`;
 
     const bootCover=`<div id="plm-boot-cover" role="status" aria-live="polite" aria-label="Loading Personal Learning Map"><div class="plm-boot-inner"><div class="plm-boot-eyebrow">GeoGeekLab · Research Map</div><div class="plm-boot-title">Personal Learning Map</div><div class="plm-boot-status" id="plm-boot-status">Preparing the final interface…</div><div class="plm-boot-bar"></div></div></div>`;
+
+    const editorialPatch=`<script>
+(()=>{
+  const set=(el,text)=>{if(el&&el.textContent!==text)el.textContent=text};
+  const zh=document.querySelector('.lang-page[data-lang="zh"]');
+  const en=document.querySelector('.lang-page[data-lang="en"]');
+  if(zh){
+    set(zh.querySelector('[data-section="scope"] .subhead + .lead'),'综合 WEF、OECD、UNESCO 及所引高校培养要求，共同覆盖的主要能力要素包括：身心健康与自我调节、学习能动性、定量与科学推理、创造与设计、沟通与协作、数字与 AI 素养、伦理与公民素养、环境与可持续性，以及专业领域的纵深能力。个人财务、家庭、法律与照护在上述框架中的覆盖相对有限，本体系将其归入“人生治理与长期责任”能力域。');
+    set(zh.querySelector('[data-section="audit"] > .lead'),'十四个模块按六类发展方式管理：长期基础、横向能力、专业主轴、生命周期学习、参考知识与快速变化的工具栈。各模块的学习投入依据能力目标、发展阶段与内容更新频率配置。');
+    zh.querySelectorAll('.cap-row .path b').forEach(x=>{if(x.textContent.trim()==='表现证据：')x.textContent='评估标准：'});
+    const n=zh.querySelector('[data-section="methods"] .note');if(n)n.innerHTML='<b>季度实施。</b>每季度选择少数高优先级能力推进至下一深度；健康、语言等基础能力维持低强度训练，探索性主题可停留在 Orient 或 Learn。季度评价依据实际应用、任务结果与反馈质量。';
+    const r=zh.querySelector('.resource-curation');if(r){set(r.querySelector('.resource-curation-copy b'),'资源分层');set(r.querySelector('.resource-curation-copy p'),'资源按课程功能与学习阶段分为主干、进阶和前沿，并标注先修要求与适用阶段。');const s=r.querySelectorAll('.resource-tier-legend > div span');set(s[0],'用于系统建立核心概念、方法和基础训练。');set(s[1],'用于在既有基础上提高理论深度、技术难度或应用复杂度。');set(s[2],'用于跟踪研究、技术与公共议题的最新进展。')}
+  }
+  if(en){
+    set(en.querySelector('[data-section="scope"] .subhead + .lead'),'Across WEF, OECD, UNESCO, and the cited university curricula, the recurring capability areas are physical and psychological health and self-regulation; learning agency; quantitative and scientific reasoning; creativity and design; communication and collaboration; digital and AI literacy; ethics and citizenship; environmental sustainability; and domain-specific depth. Personal finance, family, law, and care receive less direct coverage in these frameworks and are grouped here under life governance and long-term responsibility.');
+    set(en.querySelector('[data-section="audit"] > .lead'),'The fourteen modules are managed through six development modes: lifelong foundations, cross-cutting capabilities, a professional major axis, lifecycle learning, reference knowledge, and fast-changing tool stacks. Learning allocation is determined by capability objectives, development stage, and update cycle.');
+    en.querySelectorAll('.cap-row .path b').forEach(x=>{if(x.textContent.trim()==='Evidence:')x.textContent='Assessment criteria:'});
+    const n=en.querySelector('[data-section="methods"] .note');if(n)n.innerHTML='<b>Quarterly implementation.</b> Each quarter advances a small number of high-priority capabilities to the next depth level. Health and language remain in low-intensity maintenance, while exploratory subjects may remain at Orient or Learn. Quarterly evaluation is based on real-world application, task outcomes, and feedback quality.';
+    const r=en.querySelector('.resource-curation');if(r){set(r.querySelector('.resource-curation-copy b'),'Resource tiers');set(r.querySelector('.resource-curation-copy p'),'Resources are classified by instructional function and learning stage as canonical, advanced, or living-edge, with prerequisites and intended stage stated explicitly.');const s=r.querySelectorAll('.resource-tier-legend > div span');set(s[0],'Builds core concepts, methods, and foundational practice.');set(s[1],'Extends established foundations through greater theoretical depth, technical difficulty, or application complexity.');set(s[2],'Tracks current developments in research, technology, and public issues.')}
+  }
+})();
+<\/script>`;
 
     const bootRelease=`<script>
 (()=>{
@@ -110,7 +132,7 @@ html[data-plm-boot="ready"] #plm-boot-cover{opacity:0;pointer-events:none}
     const enhanced=html
       .replace('</head>',bootHead+'\n</head>')
       .replace('<body>','<body>'+bootCover)
-      .replace('</body>','<script src="assets/open-lectures.js?v=20261005b"><\/script><script src="assets/interaction.js?v=20261005b"><\/script><script src="assets/typography.js?v=20261003c"><\/script>'+bootRelease+'</body>');
+      .replace('</body>','<script src="assets/open-lectures.js?v=20261005b"><\/script><script src="assets/interaction.js?v=20261005b"><\/script><script src="assets/typography.js?v=20261003c"><\/script>'+editorialPatch+bootRelease+'</body>');
 
     document.open();
     document.write(enhanced);
