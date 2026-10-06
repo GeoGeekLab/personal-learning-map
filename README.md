@@ -134,6 +134,8 @@ The architecture draws on public capability frameworks, university curricula, de
 
 ## Interface
 
+The visual system uses [**Lieflat Charts**](https://github.com/larashero3-dotcom/lieflat-charts) as its template foundation. Its editorial spacing, fine-line structure, motion language, and **Palm · 椰林绿**, **Porcelain · 青瓷蓝**, and **Wire · 编辑部红** color systems shape the current interface.
+
 The current site includes:
 
 - **中文 / English** views;
