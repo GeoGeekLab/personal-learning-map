@@ -4,6 +4,10 @@
 
 [Open the interactive map →](https://geogeeklab.github.io/personal-learning-map/)
 
+<p align="center">
+  <img src="assets/mascot/mascot-primary.webp" alt="Personal Learning Map red panda mascot" width="560">
+</p>
+
 Personal Learning Map is a bilingual research map for long-horizon capability development. It connects capability domains, learning depth, institutional benchmarks, open courses, practice, and evidence into one navigable system.
 
 ```text
@@ -19,6 +23,17 @@ evidence + feedback
         ↓
 long-term capability
 ```
+
+## Mascot system
+
+<table>
+  <tr>
+    <td align="center" width="25%"><img src="assets/mascot/mascot-reading.webp" alt="Red panda reading" width="210"><br><strong>Read</strong></td>
+    <td align="center" width="25%"><img src="assets/mascot/mascot-sitting.webp" alt="Red panda sitting and reading" width="210"><br><strong>Reflect</strong></td>
+    <td align="center" width="25%"><img src="assets/mascot/mascot-pointing.webp" alt="Red panda pointing the way" width="210"><br><strong>Navigate</strong></td>
+    <td align="center" width="25%"><img src="assets/mascot/mascot-walking.webp" alt="Red panda walking with books" width="210"><br><strong>Move</strong></td>
+  </tr>
+</table>
 
 ## Learning architecture
 
@@ -173,6 +188,12 @@ Breadth keeps the map connected. Depth comes from sustained work inside a smalle
 .
 ├── index.html
 ├── assets/
+│   ├── mascot/
+│   │   ├── mascot-primary.webp
+│   │   ├── mascot-reading.webp
+│   │   ├── mascot-sitting.webp
+│   │   ├── mascot-pointing.webp
+│   │   └── mascot-walking.webp
 │   ├── raw.part1.txt
 │   ├── raw.part2.txt
 │   ├── raw.part3.txt
