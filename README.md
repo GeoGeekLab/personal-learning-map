@@ -78,7 +78,7 @@ Orient → Learn → Practice → Apply → Create
 | **Apply** | Can use the capability in real projects, decisions, work, relationships, and field situations |
 | **Create** | Can solve open problems, produce original work, teach, lead, or build new systems |
 
-The depth model is shared across all ten domains, making progression visible without forcing every subject into the same pace.
+The shared depth model makes progression visible while preserving distinct learning tempos across domains.
 
 ## Fourteen-module operating map
 
@@ -103,7 +103,7 @@ The resource layer is organized by instructional role and learning stage.
 | **Advanced** | Extends established foundations through deeper theory, harder technique, and more complex application |
 | **Living Edge** | Tracks current research, technology, and public questions |
 
-Each curated resource can carry:
+Each curated resource records:
 
 - capability category;
 - learning stage;
