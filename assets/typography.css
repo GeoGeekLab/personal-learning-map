@@ -4,6 +4,9 @@
   font-kerning:normal;
 }
 
+/* Long-form body copy should use the full reading column. */
+.lang-page .lead{max-width:none}
+
 /* CJK prose should fill the available line width naturally. */
 .lang-page[data-lang="zh"]{
   line-break:strict;
@@ -35,10 +38,10 @@
   overflow-wrap:normal;
   hyphens:auto;
 }
-.lang-page[data-lang="en"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3,.dek,.lead){
+.lang-page[data-lang="en"] :where(h1,h2,h3,.resource h4,.source h3,.claim h3,.dek){
   text-wrap:balance;
 }
-.lang-page[data-lang="en"] :where(.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
+.lang-page[data-lang="en"] :where(.lead,.note,.claim p,.cap-row .def,.cap-row .path,.stage p,.resource p,.method p,.source p,.footer span,td){
   text-wrap:pretty;
 }
 
