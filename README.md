@@ -7,6 +7,9 @@
 <p align="center">
   <img src="assets/mascot/mascot-primary.webp" alt="Personal Learning Map red panda mascot" width="560">
 </p>
+<!-- GeoGeekLab VIS: existing mascot / canonical illustration retained -->
+<p align="center"><sub><a href="https://github.com/GeoGeekLab/geogeeklab-visual-identity/blob/main/identity-sheets/personal-learning-map.md">Red Panda identity system ↗</a></sub></p>
+
 
 Personal Learning Map is a bilingual research map for long-horizon capability development. It connects capability domains, learning depth, institutional benchmarks, open courses, practice, and evidence into one navigable system.
 
