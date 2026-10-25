@@ -5,7 +5,7 @@
 [Open the interactive map →](https://geogeeklab.github.io/personal-learning-map/)
 
 <p align="center">
-  <img src="assets/mascot/mascot-primary.webp" alt="Personal Learning Map red panda mascot" width="560">
+  <img src="https://raw.githubusercontent.com/GeoGeekLab/geogeeklab-visual-identity/main/readme-artwork/v3/personal-learning-map/readme-artwork.webp" alt="Personal Learning Map red panda mascot" width="440">
 </p>
 <!-- GeoGeekLab VIS: existing mascot / canonical illustration retained -->
 <p align="center"><sub><a href="https://github.com/GeoGeekLab/geogeeklab-visual-identity/blob/main/identity-sheets/personal-learning-map.md">Red Panda identity system ↗</a></sub></p>
@@ -29,14 +29,7 @@ long-term capability
 
 ## Mascot system
 
-<table>
-  <tr>
-    <td align="center" width="25%"><img src="assets/mascot/mascot-reading.webp" alt="Red panda reading" width="210"><br><strong>Read</strong></td>
-    <td align="center" width="25%"><img src="assets/mascot/mascot-sitting.webp" alt="Red panda sitting and reading" width="210"><br><strong>Reflect</strong></td>
-    <td align="center" width="25%"><img src="assets/mascot/mascot-pointing.webp" alt="Red panda pointing the way" width="210"><br><strong>Navigate</strong></td>
-    <td align="center" width="25%"><img src="assets/mascot/mascot-walking.webp" alt="Red panda walking with books" width="210"><br><strong>Move</strong></td>
-  </tr>
-</table>
+The refreshed Red Panda illustration is maintained in the [GeoGeekLab Visual Identity System](https://github.com/GeoGeekLab/geogeeklab-visual-identity/tree/main/readme-artwork/v3/personal-learning-map).
 
 ## Learning architecture
 
